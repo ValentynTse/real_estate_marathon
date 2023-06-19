@@ -1,0 +1,301 @@
+@import url(https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700,800&display=swap);
+@import url(https://fonts.googleapis.com/css?family=DM+Sans:500,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Inter:regular,500&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular&display=swap);
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+body {
+  font-family: Manrope, sans-serif;
+  font-size: 1rem;
+  color: #333333;
+}
+
+/*=================================*/
+.wrapper {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/*=================================*/
+[class*=__container] {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+@media (max-width: 74.9988rem) {
+  [class*=__container] {
+    max-width: 970px;
+  }
+}
+@media (max-width: 61.9988rem) {
+  [class*=__container] {
+    max-width: 750px;
+  }
+}
+@media (max-width: 47.9988rem) {
+  [class*=__container] {
+    max-width: none;
+  }
+}
+
+/*=================================*/
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+.header__container {
+  min-height: 6.25rem;
+  display: flex;
+  -moz-column-gap: 0.625rem;
+       column-gap: 0.625rem;
+  row-gap: 0.9375rem;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media (max-width: 47.9988rem) {
+  .header__container {
+    flex-direction: column;
+    min-height: 0;
+    padding-top: 6.25rem;
+  }
+}
+.header__logo {
+  font-weight: 800;
+  font-size: 1.4375rem;
+  line-height: 134.782609%; /* 31px/23 */
+  color: #31353b;
+}
+@media (max-width: 47.9988rem) {
+  .header__logo {
+    font-size: 6vh;
+    margin-bottom: 2.5rem;
+  }
+}
+/*=================================*/
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.875rem;
+  row-gap: 0.3125rem;
+}
+@media (max-width: 767.98px) {
+  .menu__list {
+    flex-direction: column;
+    gap: 1.875rem;
+  }
+}
+.menu__link {
+  font-weight: 700;
+  font-size: 0.8125rem;
+  line-height: 130.769231%; /* 17px/13 */
+  color: #000000;
+}
+.menu__link:hover {
+  text-decoration: underline;
+}
+@media (max-width: 767.98px) {
+  .menu__link {
+    font-size: 4vh;
+  }
+}
+
+/*=================================*/
+.page {
+  flex: 1 1 auto;
+}
+.main-block {
+  position: relative;
+  padding-top: 11.5rem;
+}
+.main-block__container::after {
+  background: #bdccff;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 64%;
+  height: 100%;
+  width: 100%;
+}
+.main-block__body {
+  margin-bottom: 14px;
+}
+/*=================================*/
+.body-main-block {
+  display: flex;
+}
+.body-main-block__content {
+  flex: 0 1 50%;
+}
+.body-main-block__slider {
+  flex: 0 1 50%;
+  min-width: 0;
+}
+
+/*=================================*/
+.content-main-block__body {
+  padding-right: 5rem;
+}
+.content-main-block__subtitle {
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 1.375rem;
+  line-height: 131.818182%; /* 29px/22 */
+  color: #ff9900;
+  margin-bottom: 24px;
+}
+.content-main-block__title {
+  font-weight: 800;
+  font-size: 3.375rem;
+  line-height: 135.185185%; /* 73px/54 */
+  color: #000000;
+  margin-bottom: 1.5rem;
+}
+.content-main-block__text {
+  font-weight: 400;
+  line-height: 135.294118%; /* 23px/17 */
+  letter-spacing: 0.01em;
+  color: #31353b;
+  margin-bottom: 3rem;
+}
+/*=================================*/
+.form-main-block {
+  position: relative;
+  display: flex;
+  margin-right: -11.75rem;
+  z-index: 2;
+  height: 5.375rem;
+  background-color: #fff;
+  background: url(/img/icons/house.svg) 33px 50% no-repeat;
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222), 0px 20px 13px rgba(0, 0, 0, 0.015), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
+}
+.form-main-block__input {
+  font-size: inherit;
+  padding-left: 4.625rem;
+  border: 1px solid #dadada;
+  background-color: transparent;
+  width: 100%;
+  flex: 1 1 auto;
+}
+.form-main-block__input::-moz-placeholder {
+  font-size: 1.25rem;
+  line-height: 135%; /* 27px/20 */
+  letter-spacing: 0.01em;
+  color: rgba(49, 53, 59, 0.307);
+}
+.form-main-block__input::placeholder {
+  font-size: 1.25rem;
+  line-height: 135%; /* 27px/20 */
+  letter-spacing: 0.01em;
+  color: rgba(49, 53, 59, 0.307);
+}
+.form-main-block__button {
+  width: 11.75rem;
+  flex: 0 0 11.75rem;
+  padding: 0.3125rem 0.9375rem;
+  background-color: #f85a47;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.0625rem;
+  line-height: 135.294118%; /* 23px/17 */
+  letter-spacing: 0.01em;
+  /* white */
+  color: #ffffff;
+}
+
+/*=================================*/
+.partners-main-block {
+  max-width: 65%;
+}
+.partners-main-block__label {
+  font-size: 17px;
+  line-height: 135.294118%; /* 23px/17 */
+  letter-spacing: 0.01em;
+  color: #31353b;
+  margin-bottom: 27px;
+}
+.partners-main-block__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9375rem;
+  justify-content: space-between;
+}
+.partners-main-block__item img {
+  max-width: 100%;
+}
+
+/*=================================*/
