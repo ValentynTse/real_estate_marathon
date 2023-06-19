@@ -3,7 +3,7 @@ const swiper = new Swiper('.slider-main-block', {
    loop: true,
    // Navigation arrows
    navigation: {
-      nextEl: '.slider-main-block__arrow',
-      prevEl: '.slider-main-block__arrow',
+      nextEl: '.body-main-block__arrow.swiper-button-next',
+      prevEl: '.body-main-block__arrow.swiper-button-prev',
    },
 });
