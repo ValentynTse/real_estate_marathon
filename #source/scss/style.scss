@@ -323,7 +323,7 @@ body {
    &__how {
       padding: 6.875rem 0;
       @media (max-width: 48rem) {
-         padding: 3.125rem 0;
+         padding: 3.4375rem 0;
       }
    }
 }
@@ -428,17 +428,15 @@ body {
 /*===============PAGE__DEALS==================*/
 .page {
    &__deals {
-      padding: 6.875rem 0;
-      @media (max-width: 30rem) {
-         padding: 3.125rem 0;
+      padding: 110px 0;
+      @media (max-width: 48rem) {
+         padding: 3.4375rem 0;
       }
    }
 }
 .deals {
    &__header {
       margin-bottom: 3.125rem;
-   }
-   &__tabs {
    }
 }
 .header-deals {
@@ -529,9 +527,7 @@ body {
       &:hover::after {
          width: 100%;
       }
-   }
-   &__body {
-   }
+   }   
    &__item {
       display: none;
       &.active {
@@ -603,42 +599,52 @@ body {
 /*=========================PAGE__FEATURED===============*/
 .page {
    &__featured {
-      padding: 120px 0;
+      padding: 7.5rem 0;
+      @media (max-width: 48rem) {
+         padding: 3.4375rem 0;
+      }
    }
 }
 .featured {
-   &__container {
-   }
    &__title {
-      margin-bottom: 95px;
+      margin-bottom: 5.9375rem;
+      @media (max-width: 62rem) {
+         margin-bottom: 3.125rem;
+      }
    }
    &__body {
       background-color: #f1ffff;
       display: grid;
-      grid-template-columns: repeat(2,1fr);
-      gap: 77px;
-      padding: 40px 40px 0;
-   }
-   &__images {
-      
+      grid-template-columns: repeat(2, 1fr);
+      @media (max-width: 62rem) {
+         grid-template-columns: 1fr;
+         align-items: center;
+      }
+      column-gap: 4.8125rem;
+      row-gap: 1.875rem;
+      padding: 2.5rem 2.5rem 5.125rem 2.5rem;
    }
    &__content {
-      padding-top: 40px;
-      
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      max-width: 25.75rem;
+      @media (max-width: 62rem) {
+         max-width: 100%;
+      }
    }
 }
 .images-featured {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+   display: grid;
+   justify-items: center;
    &__item {
       img {
          max-width: 100%;
       }
       &_mini {
-         margin-left: 20px;
-         margin-right: 20px;
-         transform: translate(0, -40%);
+         margin-left: 1.25rem;
+         margin-right: 1.25rem;
+         margin-top: -7.125rem;
          filter: drop-shadow(0px 163px 80px rgba(0, 0, 0, 0.04))
             drop-shadow(0px 105.648px 46.8519px rgba(0, 0, 0, 0.0303704))
             drop-shadow(0px 62.7852px 25.4815px rgba(0, 0, 0, 0.0242963))
@@ -650,29 +656,74 @@ body {
    }
 }
 .content-featured {
+   &__body {
+      display: flex;
+      flex-direction: column;
+      padding-top: 2.625rem;
+      @media (max-width: 62rem) {
+         align-items: center;
+         padding-top: 0;
+      }
+   }
    &__title {
       font-weight: 600;
-      font-size: 31px;
+      font-size: 1.9375rem;
       line-height: 135.483871%; /* 42px/31 */
       color: #000000;
-      margin-bottom: 28px;
+      margin-bottom: 1.75rem;
+      @media (max-width: 62rem) {
+         text-align: center;
+      }
    }
    &__text {
+      max-width: 21.5rem;
       line-height: 150%; /* 24px/16 */
       color: #545a58;
+      margin-bottom: 2.625rem;
    }
    &__list {
       display: grid;
-      grid-template-columns: repeat(3,1fr);
+      grid-template-columns: repeat(3, 1fr);
+      @media (max-width: 48rem) {
+         grid-template-columns: repeat(2, 1fr);
+      }
+      gap: 2.1875rem;
+      margin-bottom: 3.375rem;
    }
    &__button {
+      display: block;
+      justify-self: end;
+      text-transform: uppercase;
+      width: 100%;
+      border-radius: 0.3125rem;
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.125rem;
+      font-family: Inter;
+      font-weight: 500;
+      color: #fff;
+      background-color: #f85a47;
+      transition: all 0.3s ease 0s;
+      &:hover {
+         background-color: #b24034;
+      }
+      box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(248, 90, 71, 0.02),
+         0px 8.148148536682129px 6.518518447875977px 0px rgba(248, 90, 71, 0.03),
+         0px 20px 13px 0px rgba(248, 90, 71, 0.04),
+         0px 38.51852035522461px 25.481481552124023px 0px rgba(248, 90, 71, 0.04),
+         0px 64.81481170654297px 46.85185241699219px 0px rgba(248, 90, 71, 0.05),
+         0px 100px 80px 0px rgba(248, 90, 71, 0.07);
    }
 }
 .list-content-featured {
-   &__item {
-   }
    &__label {
+      color: #000;
+      font-size: 1.0625rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
    }
    &__value {
+      color: #545a58;
+      font-size: 1.0625rem;
    }
 }

@@ -431,7 +431,7 @@ body {
 }
 @media (max-width: 48rem) {
   .page__how {
-    padding: 3.125rem 0;
+    padding: 3.4375rem 0;
   }
 }
 
@@ -540,17 +540,18 @@ body {
 
 /*===============PAGE__DEALS==================*/
 .page__deals {
-  padding: 6.875rem 0;
+  padding: 110px 0;
 }
-@media (max-width: 30rem) {
+@media (max-width: 48rem) {
   .page__deals {
-    padding: 3.125rem 0;
+    padding: 3.4375rem 0;
   }
 }
 
 .deals__header {
   margin-bottom: 3.125rem;
 }
+
 .header-deals {
   display: flex;
   flex-wrap: wrap;
@@ -716,50 +717,130 @@ body {
 
 /*=========================PAGE__FEATURED===============*/
 .page__featured {
-  padding: 120px 0;
+  padding: 7.5rem 0;
+}
+@media (max-width: 48rem) {
+  .page__featured {
+    padding: 3.4375rem 0;
+  }
 }
 
 .featured__title {
-  margin-bottom: 95px;
+  margin-bottom: 5.9375rem;
+}
+@media (max-width: 62rem) {
+  .featured__title {
+    margin-bottom: 3.125rem;
+  }
 }
 .featured__body {
   background-color: #f1ffff;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 77px;
-  padding: 40px 40px 0;
+  -moz-column-gap: 4.8125rem;
+       column-gap: 4.8125rem;
+  row-gap: 1.875rem;
+  padding: 2.5rem 2.5rem 5.125rem 2.5rem;
+}
+@media (max-width: 62rem) {
+  .featured__body {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
 }
 .featured__content {
-  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 25.75rem;
+}
+@media (max-width: 62rem) {
+  .featured__content {
+    max-width: 100%;
+  }
 }
 
 .images-featured {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  justify-items: center;
 }
 .images-featured__item img {
   max-width: 100%;
 }
 .images-featured__item_mini {
-  margin-left: 20px;
-  margin-right: 20px;
-  transform: translate(0, -40%);
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  margin-top: -7.125rem;
   filter: drop-shadow(0px 163px 80px rgba(0, 0, 0, 0.04)) drop-shadow(0px 105.648px 46.8519px rgba(0, 0, 0, 0.0303704)) drop-shadow(0px 62.7852px 25.4815px rgba(0, 0, 0, 0.0242963)) drop-shadow(0px 32.6px 13px rgba(0, 0, 0, 0.02)) drop-shadow(0px 13.2815px 6.51852px rgba(0, 0, 0, 0.0157037)) drop-shadow(0px 3.01852px 3.14815px rgba(0, 0, 0, 0.00962963)) drop-shadow(48px 58px 44px rgba(0, 0, 0, 0.09));
 }
 
+.content-featured__body {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2.625rem;
+}
+@media (max-width: 62rem) {
+  .content-featured__body {
+    align-items: center;
+    padding-top: 0;
+  }
+}
 .content-featured__title {
   font-weight: 600;
-  font-size: 31px;
+  font-size: 1.9375rem;
   line-height: 135.483871%; /* 42px/31 */
   color: #000000;
-  margin-bottom: 28px;
+  margin-bottom: 1.75rem;
+}
+@media (max-width: 62rem) {
+  .content-featured__title {
+    text-align: center;
+  }
 }
 .content-featured__text {
+  max-width: 21.5rem;
   line-height: 150%; /* 24px/16 */
   color: #545a58;
+  margin-bottom: 2.625rem;
 }
 .content-featured__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 2.1875rem;
+  margin-bottom: 3.375rem;
+}
+@media (max-width: 48rem) {
+  .content-featured__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.content-featured__button {
+  display: block;
+  justify-self: end;
+  text-transform: uppercase;
+  width: 100%;
+  border-radius: 0.3125rem;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.125rem;
+  font-family: Inter;
+  font-weight: 500;
+  color: #fff;
+  background-color: #f85a47;
+  transition: all 0.3s ease 0s;
+  box-shadow: 0px 1.8518518209px 3.1481480598px 0px rgba(248, 90, 71, 0.02), 0px 8.1481485367px 6.5185184479px 0px rgba(248, 90, 71, 0.03), 0px 20px 13px 0px rgba(248, 90, 71, 0.04), 0px 38.5185203552px 25.4814815521px 0px rgba(248, 90, 71, 0.04), 0px 64.8148117065px 46.851852417px 0px rgba(248, 90, 71, 0.05), 0px 100px 80px 0px rgba(248, 90, 71, 0.07);
+}
+.content-featured__button:hover {
+  background-color: #b24034;
+}
+
+.list-content-featured__label {
+  color: #000;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+.list-content-featured__value {
+  color: #545a58;
+  font-size: 1.0625rem;
 }
