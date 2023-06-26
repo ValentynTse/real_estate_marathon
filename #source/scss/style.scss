@@ -977,3 +977,62 @@ body {
       cursor: pointer;
    }
 }
+
+/*=========================FOOTER===============*/
+.footer {
+   &__container {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      max-width: 57.5rem;
+      border-top: 1px solid #dedfe1;
+      row-gap: 4.375rem;
+      column-gap: 1.25rem;
+      padding-top: 3.75rem;
+      padding-bottom: 2.5rem;
+      @media (max-width: 48rem) {
+         grid-template-columns: 1fr;
+         justify-items: center;
+         row-gap: 1.25rem;
+         padding-top: 1.875rem;
+         padding-bottom: 1.25rem;
+      }
+   }
+   &__logo {
+      font-size: 1.4375rem;
+      line-height: 1.9375rem;
+      font-weight: 800;
+   }
+   &__menu {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+   }
+   &__text {
+      font-size: 0.75rem;
+      line-height: 1rem;
+      font-family: DM Sans;
+      font-weight: 700;
+      @media (min-width: 48rem) {
+         grid-column: span 2;
+      }
+      text-align: center;
+   }
+}
+.menu-footer {
+   &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      column-gap: 2.875rem;
+      row-gap: 0.9375rem;
+   }
+   &__link {
+      font-size: 0.8125rem;
+      line-height: 1.0625rem;
+      font-family: DM Sans;
+      font-weight: 700;
+      &:hover {
+         text-decoration: underline;
+      }
+   }
+}
