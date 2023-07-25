@@ -248,7 +248,7 @@ body {
 }
 .body-main-block__arrow.swiper-button-prev, .body-main-block__arrow.swiper-button-next {
   position: static;
-  background: url(/img/page__main/icons/arrow.svg) 0 0/100% no-repeat;
+  background: url(../img/page__main/icons/arrow.svg) 0 0/100% no-repeat;
   height: 1.25rem;
   width: 0.6875rem;
 }
@@ -325,7 +325,7 @@ body {
   margin-right: -11.75rem;
   z-index: 2;
   background-color: #fff;
-  background: #fff url(/img/page__main/icons/house.svg) 33px 32px no-repeat;
+  background: #fff url(../img/page__main/icons/house.svg) 33px 32px no-repeat;
   box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222), 0px 20px 13px rgba(0, 0, 0, 0.015), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
 }
 @media (max-width: 75rem) {
@@ -487,14 +487,14 @@ body {
   transform: translate(100%);
   width: 100%;
   height: 0.6875rem;
-  background: url(/img/page__how/border_1.png) 0 0 no-repeat;
+  background: url(../img/page__how/border_1.png) 0 0 no-repeat;
   max-width: 13.125rem;
 }
 @media (max-width: 75rem) {
   .item-how__icon::after {
     transform: translate(95%);
     width: 70%;
-    background: url(/img/page__how/border_1.png) 0 0/70% no-repeat;
+    background: url(../img/page__how/border_1.png) 0 0/70% no-repeat;
   }
 }
 @media (max-width: 48rem) {
@@ -511,13 +511,13 @@ body {
   box-shadow: 0px 100px 80px rgba(77, 223, 253, 0.07), 0px 64.8148px 46.8519px rgba(77, 223, 253, 0.0531481), 0px 38.5185px 25.4815px rgba(77, 223, 253, 0.0425185), 0px 20px 13px rgba(77, 223, 253, 0.035), 0px 8.14815px 6.51852px rgba(77, 223, 253, 0.0274815), 0px 1.85185px 3.14815px rgba(77, 223, 253, 0.0168519);
 }
 .item-how__icon_2::after {
-  background: url(/img/page__how/border_2.png) 0 0 no-repeat;
+  background: url(../img/page__how/border_2.png) 0 0 no-repeat;
 }
 @media (max-width: 75rem) {
   .item-how__icon_2::after {
     transform: translate(95%);
     width: 70%;
-    background: url(/img/page__how/border_2.png) 0 0/70% no-repeat;
+    background: url(../img/page__how/border_2.png) 0 0/70% no-repeat;
   }
 }
 .item-how__icon_3 {
